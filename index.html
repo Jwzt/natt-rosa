@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natt 💞</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('./natt.png');
+            background-color: #ffcccc; /* Fallback caso a imagem não carregue */
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fcfcfc;
+        }
+
+        p {
+            font-size: 20px;
+            color: #e790b1;
+            background-color: #ffcccc00;
+        }
+
+        .heart {
+            font-size: 50px;
+            color: #f30000;
+            cursor: pointer;
+        }
+
+        #resposta, #mensagem {
+            font-size: 24px;
+            color: #eff1f1;
+            background-color: #ffcccc00;
+            border: none;
+            cursor: pointer;
+            display: none; /* Inicialmente escondido */
+        }
+
+        .link-coracao {
+            color: #d855bc; /* Cor do link */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .link-coracao:hover {
+            color: #ff00c8; /* Cor ao passar o mouse */
+        }
+
+        .button {
+            font-size: 50px;
+            color: #f30000;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .button:hover {
+            color: #ff0033; /* Cor do botão ao passar o mouse */
+        }
+        .link-coracao1 {
+            text-decoration: none;
+            color: red;
+            font-size: 18px;
+        }
+
+        .link-coracao:hover {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <p>oioi amor ❤️</p>
+        <p>
+            Quero dizer que desde que eu te conheci, eu me apaixonei por ti. Minha vida tomou outro rumo e esse rumo é o melhor caminho que eu poderia ter encontrado. Desde então, os dias cinzas viraram coloridos.
+            O sorriso que antes nem existia, hoje ele é estampado em meu rosto!
+            Você se tornou minha calmaria, meu lar e meu lugar! Obrigado por existir e me trazer paz! Estarei com você pra sempre ❤️
+            Amorzinho, obrigado por sempre me fazer bem e me tratar bem. Eu quero que você saiba que ninguém NUNCA vai tomar o seu lugar, pois não existe ninguém que me faz tão bem como você. Eu quero que você saiba que eu
+            não vou ser o homem que vai te trair ou te machucar; eu vou ser o homem que sempre vai te ajudar e te apoiar em tudo. A sorte que eu tenho de ter você na minha vida é enorme.
+            Queria falar que eu simplesmente amo você. Seu jeito me encanta; fico bobo te admirando. Amo sua personalidade, amo todo detalhe seu.
+            Espero poder te amar e respeitar, cuidar de você como ninguém nunca cuidou.
+            Eu não sei se é possível se apaixonar pela mesma pessoa todos os dias, mas eu me sinto assim. Quando falo com você, sinto uma conexão de outro mundo. Te quero porque quero cuidar de você e mostrar que nem todos vão embora. Quero te mostrar
+            <br>o meu verdadeiro amor.
+            
+        </p>
+        <p>Eu te amo Natt</p>
+        <p>
+            <span class="heart" onclick="mostrarResposta()">❤️</span>
+            <span class="button" onclick="mostrarMensagem()">🤍</span>
+        </p>
+        <p id="resposta">
+            <a href="index1.html" class="link-coracao">Por enquanto não consigo te dar uma de verdade, mas essa é de coração ❤️</a>
+        </p>
+        <p id="resposta">
+            <a href="#" class="link-coracao1" onclick="tocarMusica();">Por enquanto não consigo te dar uma de verdade, mas essa é de coração ❤️</a>
+        </p>
+        <!-- Elemento de áudio oculto -->
+    <audio id="musica" src="natt.mp3"></audio>
+
+    <script>
+        function tocarMusica() {
+            var audio = document.getElementById('musica');
+            audio.play();
+        }
+    </script>
+        <p id="mensagem">
+            <a href="index3.html" class="link-coracao">My girl 🤍</a>
+        </p>
+    </div>
+    <script>
+        function mostrarResposta() {
+            document.getElementById('resposta').style.display = 'block';
+        }
+
+        function mostrarMensagem() {
+            document.getElementById('mensagem').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
